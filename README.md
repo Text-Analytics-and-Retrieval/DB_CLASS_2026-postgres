@@ -12,9 +12,6 @@
 - 一般消費者可以瀏覽、搜尋、購買商品，並查看訂單狀態。
 - 後台管理者可以編輯商品，並檢視每筆訂單以及商品銷售圖表。
 
-## 介面範例
-![image](https://user-images.githubusercontent.com/52253495/226426951-b1ef62d0-56ae-443f-9483-c06524b5fb12.png)
-> 點選以下連結體驗系統功能: https://bookstore.tarflow.com/
 ## 安裝
 
 ### 0. 進入終端機
@@ -32,13 +29,13 @@ cd DB_CLASS_2025/
 ```bash!
 # 1. `db-2025` 可改為自訂的環境名稱
 # 2. 同學也可以自訂 `python=...` 的版本，但要注意3.11版會有版本衝突的問題，不建議使用
-conda create -n db-2025 python=3.10
+conda create -n db-2026 python=3.10
 
 # 3. 啟動 conda 環境
-conda activate db-2025
+conda activate db-2026
 
 # 4. 這時候可以在終端機看到類似 
-# (db-2025) user@userMacBook-Pro directory %
+# (db-2026) user@userMacBook-Pro directory %
 ```
 
 ### 3. 安裝環境
@@ -59,15 +56,13 @@ cp .env.example .env
 ```
 
 接著，在 .env 檔案內填入 PostgreSQL 連線資訊。
-> 各組的連線資訊存放在網路大學的，
-> 分組學習 ➔專案分組 ➔進入小組 ➔討論 ➔組內討論 ➔資料庫連線資訊
 ```bash
 # .env 檔案中對應的環境參數範例
-DB_USER=project_x
-DB_PASSWORD=c8763xxx
-DB_HOST=140.117.xxx
-DB_PORT=12xx
-DB_NAME=project_x
+DB_USER=...
+DB_PASSWORD=...
+DB_HOST=...
+DB_PORT=...
+DB_NAME=...
 ```
 
 
