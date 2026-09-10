@@ -20,14 +20,14 @@
 
 ```bash
 # 從 Github 拉取原始碼
-git clone https://github.com/Text-Analytics-and-Retrieval/DB_CLASS_2025.git
-cd DB_CLASS_2025/
+git clone https://github.com/Text-Analytics-and-Retrieval/DB_CLASS_2026-postgres.git
+cd DB_CLASS_2026-postgres/
 ```
 
 ### 2. 建立環境
 注意：請先安裝 [anaconda](https://www.anaconda.com/download) 再進行後續的步驟
 ```bash!
-# 1. `db-2025` 可改為自訂的環境名稱
+# 1. `db-2026` 可改為自訂的環境名稱
 # 2. 同學也可以自訂 `python=...` 的版本，但要注意3.11版會有版本衝突的問題，不建議使用
 conda create -n db-2026 python=3.10
 
