@@ -7,12 +7,9 @@
 
 {% block content %}
 
-{% set temp = 'img/' + data.商品圖片 %}
-
 <br/>
 <div class="row">
 <div class="card" style="width: 20rem;margin-left:5%">
-  <img src={{ url_for('static', filename = temp  ) }} class="card-img-top">
   <div class="card-body">
     <h5 class="card-title">{{ data.商品名稱 }}</h5>
     <p class="card-text"></p>
@@ -32,10 +29,8 @@
 <div class="card" style="margin-top:10%">
   <h5 class="card-header">商品介紹</h5>
   <div class="card-body">
-    <p class="card-text">
-      {{data.商品敘述}}
-    </p>
-    <button class="btn btn-outline-success" type="submit" value="{{data.商品編號}}" name="pid">加入購物車</a>
+    <p class="card-text" style="white-space: pre-line;">{{ data.商品敘述|replace('\\n', '\n') }}</p>
+    <button class="btn btn-outline-success" type="submit" value="{{data.商品編號}}" name="pid">加入購物車</button>
   </div>
 </div>
 </form>
