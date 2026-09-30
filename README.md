@@ -49,11 +49,7 @@ pip install -r requirements.txt
 ```
 
 ##### 修改連線資訊
-首先，執行以下指令，把 .env.example 這個檔案複製一份，並取名叫 .env
-> 執行以下指令以後，根目錄下將會有 2 份內容相同的檔案(`.env.example`, `.env`)，我們要修改的是手動新增的 `.env` 檔
-```bash
-cp .env.example .env
-```
+首先，把 .env.example 這個檔案複製一份，並取名叫 .env
 
 接著，在 .env 檔案內填入 PostgreSQL 連線資訊。
 > 各組的連線資訊存放在網路大學的， 分組學習 ➔專案分組 ➔進入小組 ➔討論 ➔組內討論 ➔資料庫連線資訊
